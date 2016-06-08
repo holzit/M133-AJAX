@@ -25,7 +25,7 @@
 					result_output.innerHTML = ajax_request.responseText;
 				}
 			};
-			ajax_request.open("GET", "" /* TODO: .php query file */, true);
+			ajax_request.open("GET", "query_ort.php?txt=" + text, true);
 			ajax_request.send();
 		}
 	};
