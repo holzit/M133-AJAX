@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>M133 - AJAX demo</title>	
+		<title>M133 - AJAX demo</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<h1>Persönliche Daten</h1>
+		<h1>Persoenliche Daten</h1>
+	</br>
 		<form>
-			<table border="0" cellpadding="3" cellspacing="3">
-				<tr>
-					<td><label for="vorname">Ihr Vorname:</label></td>
-					<td><input id="vorname" name="vorname"></td>
-				</tr>
-				<tr>
-					<td><label for="nachname">Ihr Nachname:</label></td>
-					<td><input id="nachname" name="nachname"></td>
-				</tr>
-				<tr>
-					<td><label for="ort">Ihr Wohnort:</label></td>
-					<td><input id="ort" name="ort"></td>
-				</tr>
-			</table>
+
+					<div class="group">
+						<input id="vorname" name="vorname">
+							<span class="highlight"></span>
+							<span class="bar"></span>
+						<label for="vorname">Ihr Vorname:</label>
+					</div>
+
+				<div class="group">
+					<input id="nachname" name="nachname">
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label for="nachname">Ihr Nachname:</label>
+				</div>
+
+				<div class="group">
+					<input id="ort" name="ort">
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label for="ort">Ihr Wohnort:</label>
+				</div>
+
 		</form>
-	
+
 	</body>
 </html>
