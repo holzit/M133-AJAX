@@ -26,7 +26,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-		echo $row["name"];
+		echo utf8_encode($row["name"]);
     }
 } else {
     echo "No cities found.";

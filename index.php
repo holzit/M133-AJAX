@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>M133 - AJAX demo</title>
-		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
