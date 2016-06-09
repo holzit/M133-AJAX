@@ -7,7 +7,7 @@
    TODO: Return city name by echo'ing
 */
 
-$input = $_GET["txt"];
+$input = $_REQUEST["txt"];
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -26,9 +26,9 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-		echo utf8_encode($row["name"]);
+		if(substr_compare($row["name"], utf8_decode($input), 0, strlen(utf8_decode($input))) === 0) {
+			echo utf8_encode($row["name"]);
+		}
     }
-} else {
-    echo "No cities found.";
 }
 $conn->close();
