@@ -1,11 +1,5 @@
 ﻿<?php
 /* This file returns a recommendation */
-/*
-   TODO: Save input from GET
-   TODO: Database connection
-   TODO: Query fitting city name
-   TODO: Return city name by echo'ing
-*/
 
 $input = $_REQUEST["txt"];
 $servername = "localhost";
@@ -26,8 +20,11 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
+		// Does the row start with $input?
 		if(substr_compare($row["name"], utf8_decode($input), 0, strlen(utf8_decode($input))) === 0) {
+			// Return result and stop looping
 			echo utf8_encode($row["name"]);
+			return;
 		}
     }
 }
