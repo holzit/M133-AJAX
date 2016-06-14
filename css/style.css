@@ -1,9 +1,11 @@
 * { box-sizing:border-box; }
 
 /* basic stylings ------------------------------------------ */
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 .container      {
-  font-family:'Arial';
   width:600px;
   margin:30px auto 0;
   display:block;
