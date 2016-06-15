@@ -29,9 +29,19 @@ if ($result->num_rows > 0) {
     }
 }
 
+if($id == NULL) {
+	$sql = "INSERT INTO ort (name) VALUES('$ort')";
+	
+	if ($conn->query($sql) === TRUE) {
+	    echo "Neuer Ort hinzugefügt. ";
+	} else {
+	    echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+}
+
 /* INSERT */
 $sql = "INSERT INTO person (vorname, nachname, ort)
-VALUES ('$vorname', '$nachname', $id)";
+VALUES ('$vorname', '$nachname', LAST_INSERT_ID())";
 
 if ($conn->query($sql) === TRUE) {
     echo "Vielen Dank für Ihre Daten!";
