@@ -41,8 +41,13 @@ color: #424242;
 
 background-color: #ffffff;
 position: absolute;
-
     z-index: 1000;
+
+}
+
+.ntextc {
+text-align:center;
+font-size:11px;
 
 }
 

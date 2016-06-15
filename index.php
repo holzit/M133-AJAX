@@ -47,9 +47,11 @@
 
 		<h5 class="titlec">Copryright &copy; Severin Fürbringer, Austin Albrecht and Gianluca Scarciolla</h5>
 
-		<button id="killcss" type="button">Kill CSS</button>
 
-<p style="text-align:center; font-size:11px;">Download this Project now on <a href="https://github.com/Hoi15A/M133-AJAX">GitHub</span><a/></p>
+
+<p class="ntextc">Download this Project now on <a href="https://github.com/Hoi15A/M133-AJAX">GitHub</span><a/></p>
+
+		<button id="killcss" type="button">Kill CSS</button>
 
 </div>
 
