@@ -37,12 +37,34 @@ color: #424242;
 
 }
 
-#result {
+.linkst {
 
 background-color: #ffffff;
 position: absolute;
     z-index: 1000;
+padding: 1%;
+width: 80%;
+}
 
+.linkst a:link {
+    font-style: oblique;
+    text-decoration: none;
+    color: #5264AE;
+}
+
+.linkst a:visited {
+    text-decoration: none;
+    color: #5264AE;
+}
+
+.linkst a:hover {
+    text-decoration: underline;
+    color: #5264AE;
+}
+
+.linkst a:active {
+    text-decoration: underline;
+    color: #5264AE;
 }
 
 .ntextc {
