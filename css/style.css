@@ -33,12 +33,23 @@ h2 small {
 .titlec {
 
 text-align: center;
+color: #424242;
 
+}
+
+.Github {
+    border-radius: 25px;
+    background: url(../img/GitHub-Mark.png);
+    background-position: center;;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
 }
 
 .content-c {
 
-  margin-top: 5%;
+  margin-top: 3%;
   width: 400px;
   margin-left: auto ;
   margin-right: auto ;
