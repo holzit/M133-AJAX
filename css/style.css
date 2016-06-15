@@ -58,6 +58,22 @@ color: #424242;
 
 }
 
+#killcss {
+
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #ff4300;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 
 .buttonf {
   position: relative;
