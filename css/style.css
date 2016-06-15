@@ -1,228 +1,248 @@
+/* 
+	This repo is part of a small school project about AJAX.
+    Copyright (C) 2016  Severin Fürbringer
+    Copyright (C) 2016  Austin Albrech
+    Copyright (C) 2016  Gianluca Scarciolla
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 * { box-sizing:border-box; }
 
 /* basic stylings ------------------------------------------ */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-image: url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+	font-family: 'Roboto', sans-serif;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 }
 
 html {
-height: 100%
+	height: 100%
 }
 
 .container      {
-  width:600px;
-  margin:30px auto 0;
-  display:block;
-  background:#FFF;
-  padding:10px 50px 50px;
+	width:600px;
+	margin:30px auto 0;
+	display:block;
+	background:#FFF;
+	padding:10px 50px 50px;
 }
 h2       {
-  text-align:center;
-  margin-bottom:50px;
+	text-align:center;
+	margin-bottom:50px;
 }
 h2 small {
-  font-weight:normal;
-  color:#888;
-  display:block;
+	font-weight:normal;
+	color:#888;
+	display:block;
 }
 
 .titlec {
 
-text-align: center;
-color: #424242;
+	text-align: center;
+	color: #424242;
 
 }
 
 .linkst {
 
-background-color: #ffffff;
-position: absolute;
-    z-index: 1000;
-padding: 1%;
-width: 80%;
+	background-color: #ffffff;
+	position: absolute;
+	z-index: 1000;
+	padding: 1%;
+	width: 80%;
 }
 
 .linkst a:link {
-    font-style: oblique;
-    text-decoration: none;
-    color: #5264AE;
+	font-style: oblique;
+	text-decoration: none;
+	color: #5264AE;
 }
 
 .linkst a:visited {
-    text-decoration: none;
-    color: #5264AE;
+	text-decoration: none;
+	color: #5264AE;
 }
 
 .linkst a:hover {
-    text-decoration: underline;
-    color: #5264AE;
+	text-decoration: underline;
+	color: #5264AE;
 }
 
 .linkst a:active {
-    text-decoration: underline;
-    color: #5264AE;
+	text-decoration: underline;
+	color: #5264AE;
 }
 
 .ntextc {
-text-align:center;
-font-size:11px;
+	text-align:center;
+	font-size:11px;
 
 }
 
 .content-c {
 
-  margin-top: 1%;
-  width: 400px;
-  margin-left: auto ;
-  margin-right: auto ;
-  padding: 2%;
+	margin-top: 1%;
+	width: 400px;
+	margin-left: auto ;
+	margin-right: auto ;
+	padding: 2%;
 
-  -webkit-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.45);
-  -moz-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.45);
-  box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.45);
-  background-color: #ffffff;
-  border-radius: 33px 33px 33px 33px;
-  -moz-border-radius: 33px 33px 33px 33px;
-  -webkit-border-radius: 33px 33px 33px 33px;
-  border: 0px solid #ffffff;
+	-webkit-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 0px 39px 0px rgba(0,0,0,0.45);
+	background-color: #ffffff;
+	border-radius: 33px 33px 33px 33px;
+	-moz-border-radius: 33px 33px 33px 33px;
+	-webkit-border-radius: 33px 33px 33px 33px;
+	border: 0px solid #ffffff;
 
 }
 
 #killcss {
 
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
 
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #ff4300;
-  border: 0;
-  cursor: pointer;
-  border-radius: 5px;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	background: #ff4300;
+	border: 0;
+	cursor: pointer;
+	border-radius: 5px;
 }
 
 
 .buttonf {
-  position: relative;
-vertical-align: top;
-width: 100%;
-height: 60px;
-padding: 0;
-font-size: 22px;
-color: white;
-text-align: center;
-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-background: #5264AE;
-border: 0;
-cursor: pointer;
-border-radius: 5px;
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	height: 60px;
+	padding: 0;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	background: #5264AE;
+	border: 0;
+	cursor: pointer;
+	border-radius: 5px;
 }
 
 .buttonf:active {
-top: 1px;
-outline: none;
--webkit-box-shadow: none;
-box-shadow: none;
+	top: 1px;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 
 
 /* form starting stylings ------------------------------- */
 .group            {
-  position:relative;
-  margin-bottom:45px;
+	position:relative;
+	margin-bottom:45px;
 }
 input               {
-  font-size:18px;
-  padding:10px 10px 10px 5px;
-  display:block;
-  width:300px;
-  border:none;
-  border-bottom:1px solid #757575;
+	font-size:18px;
+	padding:10px 10px 10px 5px;
+	display:block;
+	width:300px;
+	border:none;
+	border-bottom:1px solid #757575;
 }
 input:focus         { outline:none; }
 
 /* LABEL ======================================= */
 label                {
-  color:#999;
-  font-size:18px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
+	color:#999;
+	font-size:18px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	left:5px;
+	top:10px;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
 }
 
 /* active state */
 input:focus ~ label, input:valid ~ label        {
-  top:-20px;
-  font-size:14px;
-  color:#5264AE;
+	top:-20px;
+	font-size:14px;
+	color:#5264AE;
 }
 
 /* BOTTOM BARS ================================= */
 .bar    { position:relative; display:block; width:300px; }
 .bar:before, .bar:after     {
-  content:'';
-  height:2px;
-  width:0;
-  bottom:1px;
-  position:absolute;
-  background:#5264AE;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
+	content:'';
+	height:2px;
+	width:0;
+	bottom:1px;
+	position:absolute;
+	background:#5264AE;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
 }
 .bar:before {
-  left:50%;
+	left:50%;
 }
 .bar:after {
-  right:50%;
+	right:50%;
 }
 
 /* active state */
 input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:50%;
+	width:50%;
 }
 
 /* HIGHLIGHTER ================================== */
 .highlight {
-  position:absolute;
-  height:60%;
-  width:100px;
-  top:25%;
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
+	position:absolute;
+	height:60%;
+	width:100px;
+	top:25%;
+	left:0;
+	pointer-events:none;
+	opacity:0.5;
 }
 
 /* active state */
 input:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.3s ease;
-  -moz-animation:inputHighlighter 0.3s ease;
-  animation:inputHighlighter 0.3s ease;
+	-webkit-animation:inputHighlighter 0.3s ease;
+	-moz-animation:inputHighlighter 0.3s ease;
+	animation:inputHighlighter 0.3s ease;
 }
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-    from { background:#5264AE; }
-  to    { width:0; background:transparent; }
+	from { background:#5264AE; }
+	to    { width:0; background:transparent; }
 }
 @-moz-keyframes inputHighlighter {
-    from { background:#5264AE; }
-  to    { width:0; background:transparent; }
+	from { background:#5264AE; }
+	to    { width:0; background:transparent; }
 }
 @keyframes inputHighlighter {
-    from { background:#5264AE; }
-  to    { width:0; background:transparent; }
+	from { background:#5264AE; }
+	to    { width:0; background:transparent; }
 }
