@@ -7,11 +7,11 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		
+
 <div class="content-c">
 
 
-		<h1>Persoenliche Daten</h1>
+		<h1 class="titlec">Persönliche Daten</h1>
 	</br>
 		<form>
 
@@ -42,6 +42,8 @@
 				</div>
 
 		</form>
+
+		<h5 class="titlec">Copryright &copy; Severin Fürbringer, Austin Albrecht and Gianluca Scarciolla</h5>
 
 </div>
 
