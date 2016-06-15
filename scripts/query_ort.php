@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
 			strtolower(utf8_decode($input)), 0, strlen(utf8_decode($input))) === 0) {
 
 			// Return result and stop looping
-			echo utf8_encode($row["name"]."<br>");
+			echo utf8_encode('<a href="#" onclick="autoInsert(this.innerHTML);">'.$row["name"]."</a><br>");
 		}
     }
 }

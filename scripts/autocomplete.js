@@ -23,10 +23,10 @@
 	}
 
 	/*
-	 * Executes AJAX query every time 
+	 * Executes AJAX query every time
 	 */
 	ort_input.onkeyup = function() {
-		var text = this.value; // The string the user has written so far 
+		var text = this.value; // The string the user has written so far
 
 		if(text.length == 0) {
 			// Input field is empty
@@ -47,4 +47,9 @@
 			ajax_request.send();
 		}
 	};
+
 }) ();
+
+function autoInsert (ort){
+	document.getElementById("ort").value=ort;
+};
