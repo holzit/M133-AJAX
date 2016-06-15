@@ -20,31 +20,40 @@
 
 (function() {
 	/* DOM ready */
+
+  //gets the button with ID killcss
   var button = document.getElementById("killcss");
   var state = 0;
 
+  //when the button is clicked this funtion runs
   button.onclick = function(){
 
+    //depending on state a different part of the code will be ran
     switch (state) {
+      //state 0 is for when the CSS is on and has to be disabled
       case 0:
+        //loop disables all existing styleSheets
         for ( i=0; i<document.styleSheets.length; i++) {
             void(document.styleSheets.item(i).disabled=true);
         }
+        //changes text on the button
         button.innerHTML = "Enable CSS";
+        //sets the state to 1 aka CSS Disabled
         state = 1;
         break;
+      //state 1 is when CSS is off and needs to be enabled
       case 1:
         for ( i=0; i<document.styleSheets.length; i++) {
             void(document.styleSheets.item(i).disabled=false);
         }
         button.innerHTML = "Kill CSS";
+        //sets state back to 0 which is CSS enabled
         state = 0;
         break;
       default:
 
     }
 
-
   }
-
+  
 }) ();
