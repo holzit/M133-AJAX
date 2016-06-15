@@ -12,7 +12,7 @@
 
 		if(text.length == 0) {
 			// Input field is empty
-			result_output.innerHTML = "";
+			result_output.innerHTML = "&nbsp;";
 			// Done for now
 			return;
 		} else if(text.length >= 2) {

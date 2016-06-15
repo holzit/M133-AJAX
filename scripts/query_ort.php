@@ -16,6 +16,7 @@ if ($conn->connect_error) {
 
 $sql = "SELECT name FROM ort";
 $result = $conn->query($sql);
+$ok = 0;
 
 if ($result->num_rows > 0) {
     // output data of each row
@@ -24,7 +25,9 @@ if ($result->num_rows > 0) {
 		if(substr_compare($row["name"], utf8_decode($input), 0, strlen(utf8_decode($input))) === 0) {
 			// Return result and stop looping
 			echo utf8_encode($row["name"]." ");
+			$ok++;
 		}
     }
 }
+
 $conn->close();
