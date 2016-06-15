@@ -40,7 +40,7 @@
 				</div>
 
 				<div class="group">
-				<button class="buttonf" type="button" onclick="alert('Hello World!')">Send</button>
+				<button id="send" class="buttonf" type="button">Send</button>
 				</div>
 
 		</form>
