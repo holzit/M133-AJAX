@@ -37,11 +37,12 @@ if($id == NULL) {
 	} else {
 	    echo "Error: " . $sql . "<br>" . $conn->error;
 	}
+	$sql = "INSERT INTO person (vorname, nachname, ort)
+	VALUES ('$vorname', '$nachname', LAST_INSERT_ID())";
+} else {
+	$sql = "INSERT INTO person (vorname, nachname, ort)
+	VALUES ('$vorname', '$nachname', '$id')";
 }
-
-/* INSERT */
-$sql = "INSERT INTO person (vorname, nachname, ort)
-VALUES ('$vorname', '$nachname', LAST_INSERT_ID())";
 
 if ($conn->query($sql) === TRUE) {
     echo "Vielen Dank für Ihre Daten!";
