@@ -36,7 +36,7 @@
 						<span class="highlight"></span>
 						<span class="bar"></span>
 					<label for="ort">Ihr Wohnort:</label>
-					<span id="result">&nbsp;</span>
+					<span id="result"></span>
 				</div>
 
 				<div class="group">

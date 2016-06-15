@@ -37,7 +37,14 @@ color: #424242;
 
 }
 
+#result {
 
+background-color: #ffffff;
+position: absolute;
+
+    z-index: 1000;
+
+}
 
 .content-c {
 
