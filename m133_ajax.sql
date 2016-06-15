@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.2
+-- version 4.4.14
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Erstellungszeit: 08. Jun 2016 um 13:53
--- Server-Version: 10.1.13-MariaDB
--- PHP-Version: 5.6.21
+-- Host: 127.0.0.1
+-- Generation Time: Jun 15, 2016 at 11:20 AM
+-- Server version: 5.6.26
+-- PHP Version: 5.6.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,22 +17,22 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `m133_ajax`
+-- Database: `m133_ajax`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `ort`
+-- Table structure for table `ort`
 --
 
-CREATE TABLE `ort` (
+CREATE TABLE IF NOT EXISTS `ort` (
   `id` int(11) NOT NULL,
-  `name` varchar(150) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `name` varchar(150) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
 
 --
--- Daten für Tabelle `ort`
+-- Dumping data for table `ort`
 --
 
 INSERT INTO `ort` (`id`, `name`) VALUES
@@ -80,56 +80,62 @@ INSERT INTO `ort` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `person`
+-- Table structure for table `person`
 --
 
-CREATE TABLE `person` (
+CREATE TABLE IF NOT EXISTS `person` (
   `id` int(11) NOT NULL,
   `vorname` varchar(100) NOT NULL,
   `nachname` varchar(100) NOT NULL,
   `ort` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 --
--- Indizes der exportierten Tabellen
+-- Dumping data for table `person`
+--
+
+INSERT INTO `person` (`id`, `vorname`, `nachname`, `ort`) VALUES
+(1, 'fag', 'faggot', 1),
+(5, 'a', 'b', 5),
+(6, '[object HTMLInputElement]?nachname=[object HTMLInputElement]?ort=[object HTMLInputElement]', '', 43),
+(7, 'lel', 'asd', 5),
+(8, 'lel', 'asd', 5),
+(9, '[object HTMLInputElement]?nachname=[object HTMLInputElement]?ort=[object HTMLInputElement]', '', 43),
+(10, '[object HTMLInputElement]?nachname=[object HTMLInputElement]?ort=[object HTMLInputElement]', '', 43),
+(11, 'a', 'b', 21),
+(12, 'Sev1', 'Fbr1', 21),
+(13, 'Sev', 'asd', 1);
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Indizes für die Tabelle `ort`
+-- Indexes for table `ort`
 --
 ALTER TABLE `ort`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indizes für die Tabelle `person`
+-- Indexes for table `person`
 --
 ALTER TABLE `person`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT für exportierte Tabellen
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT für Tabelle `ort`
+-- AUTO_INCREMENT for table `ort`
 --
 ALTER TABLE `ort`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=44;
 --
--- AUTO_INCREMENT für Tabelle `person`
---
-ALTER TABLE `person`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- Constraints der exportierten Tabellen
---
-
---
--- Constraints der Tabelle `person`
+-- AUTO_INCREMENT for table `person`
 --
 ALTER TABLE `person`
-  ADD CONSTRAINT `ort` FOREIGN KEY (`id`) REFERENCES `ort` (`id`);
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
