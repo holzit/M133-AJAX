@@ -52,4 +52,5 @@
 
 function autoInsert (ort){
 	document.getElementById("ort").value=ort;
+	document.getElementById("result").innerHTML = "";
 };
