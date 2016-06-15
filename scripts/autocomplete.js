@@ -25,6 +25,9 @@
 	var result_output = document.getElementById("result");
 	var send = document.getElementById("send");
 
+	/**
+	 * Send users input to database per AJAX
+	 */
 	send.onclick = function() {
 		var vorname = document.getElementById("vorname").value;
 		var nachname = document.getElementById("nachname").value;

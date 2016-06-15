@@ -29,55 +29,45 @@
 
 	</head>
 	<body>
+		<div class="content-c">
+			<h1 class="titlec">Persönliche Daten</h1>
+			<br>
+			<form>
 
-
-
-<div class="content-c">
-
-
-		<h1 class="titlec">Persönliche Daten</h1>
-	</br>
-		<form>
-
-					<div class="group">
-						<input id="vorname" name="vorname">
-							<span class="highlight"></span>
-							<span class="bar"></span>
-						<label for="vorname">Ihr Vorname:</label>
-					</div>
+				<div class="group">
+					<input id="vorname" name="vorname">
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label for="vorname">Ihr Vorname:</label>
+				</div>
 
 				<div class="group">
 					<input id="nachname" name="nachname">
-						<span class="highlight"></span>
-						<span class="bar"></span>
+					<span class="highlight"></span>
+					<span class="bar"></span>
 					<label for="nachname">Ihr Nachname:</label>
 				</div>
 
 				<div class="group">
 					<input type="text" id="ort" name="ort">
-						<span class="highlight"></span>
-						<span class="bar"></span>
+					<span class="highlight"></span>
+					<span class="bar"></span>
 					<label for="ort">Ihr Wohnort:</label>
 					<span id="result" class="linkst"></span>
 				</div>
 
 				<div class="group">
-				<button id="send" class="buttonf" type="button">Send</button>
+					<button id="send" class="buttonf" type="button">Send</button>
 				</div>
 
-		</form>
+			</form>
 
-		<h5 class="titlec">Copryright &copy; Severin Fürbringer, Austin Albrecht and Gianluca Scarciolla</h5>
-
-
-
-<p class="ntextc">Download this Project now on <a href="https://github.com/Hoi15A/M133-AJAX">GitHub</span><a/></p>
-
+			<h5 class="titlec">Copryright &copy; Severin Fürbringer, Austin Albrecht and Gianluca Scarciolla</h5>
+			<p class="ntextc">Download this Project now on <a href="https://github.com/Hoi15A/M133-AJAX">GitHub</span></a></p>
 		<button id="killcss" type="button">Kill CSS</button>
+		</div>
 
-</div>
-
-	<script src="scripts/autocomplete.js"></script>
-	<script src="scripts/killcss.js"></script>
+		<script src="scripts/autocomplete.js"></script>
+		<script src="scripts/killcss.js"></script>
 	</body>
 </html>
