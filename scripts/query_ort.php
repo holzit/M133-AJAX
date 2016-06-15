@@ -16,7 +16,6 @@ if ($conn->connect_error) {
 
 $sql = "SELECT name FROM ort";
 $result = $conn->query($sql);
-$ok = 0;
 
 if ($result->num_rows > 0) {
     // output data of each row
