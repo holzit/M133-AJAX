@@ -1,7 +1,7 @@
 /* 
 	This repo is part of a small school project about AJAX.
     Copyright (C) 2016  Severin Fürbringer
-    Copyright (C) 2016  Austin Albrech
+    Copyright (C) 2016  Austin Albrecht
     Copyright (C) 2016  Gianluca Scarciolla
 
     This program is free software: you can redistribute it and/or modify
