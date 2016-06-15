@@ -44,9 +44,11 @@
 		</form>
 
 		<h5 class="titlec">Copryright &copy; Severin Fürbringer, Austin Albrecht and Gianluca Scarciolla</h5>
+		<button id="killcss" type="button">Kill CSS</button>
 
 </div>
 
 	<script src="scripts/autocomplete.js"></script>
+	<script src="scripts/killcss.js"></script>
 	</body>
 </html>
