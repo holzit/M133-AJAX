@@ -37,7 +37,19 @@ color: #424242;
 
 }
 
+#result {
 
+background-color: #ffffff;
+position: absolute;
+    z-index: 1000;
+
+}
+
+.ntextc {
+text-align:center;
+font-size:11px;
+
+}
 
 .content-c {
 
