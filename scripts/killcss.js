@@ -1,4 +1,4 @@
-/* 
+/*
 	This repo is part of a small school project about AJAX.
     Copyright (C) 2016  Severin Fürbringer
     Copyright (C) 2016  Austin Albrecht
@@ -16,6 +16,13 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+    ----------------------------------------------------------------------
+
+    Note, this script is not needed at all for the main functionality of this
+    program. It's just a fancy way of Enabling and disabling the CSS which may
+    be useful under certain circumstances.
+
 */
 
 (function() {
@@ -55,5 +62,5 @@
     }
 
   }
-  
+
 }) ();
