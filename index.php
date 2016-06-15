@@ -46,12 +46,11 @@
 		</form>
 
 		<h5 class="titlec">Copryright &copy; Severin Fürbringer, Austin Albrecht and Gianluca Scarciolla</h5>
-<<<<<<< Updated upstream
+
 		<button id="killcss" type="button">Kill CSS</button>
 
-=======
 <p style="text-align:center; font-size:11px;">Download this Project now on <a href="https://github.com/Hoi15A/M133-AJAX">GitHub</span><a/></p>
->>>>>>> Stashed changes
+
 </div>
 
 	<script src="scripts/autocomplete.js"></script>
