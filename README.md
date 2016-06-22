@@ -1,5 +1,5 @@
 # M133-AJAX
-[![Build Status](https://travis-ci.org/Hoi15A/M133-AJAX.svg?branch=master)](https://travis-ci.org/Hoi15A/M133-AJAX)
+<!--- [![Build Status](https://travis-ci.org/Hoi15A/M133-AJAX.svg?branch=master)](https://travis-ci.org/Hoi15A/M133-AJAX) --->
 
 This Repo is part of a small School project about AJAX
 
